@@ -1,6 +1,6 @@
 <?php
 /**
-*Promgram:用户注册处理程序
+*Promgram:鐢ㄦ埛娉ㄥ唽澶勭悊绋嬪簭
 *Date:2017-2-13
 *@author:Z
 *@version:1.0

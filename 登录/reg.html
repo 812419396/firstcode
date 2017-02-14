@@ -1,11 +1,49 @@
-<!--ÓÃ»§×¢²áĞÅÏ¢ÌîĞ´±íµ¥Ò³Ãæ-->
+<!--ç”¨æˆ·æ³¨å†Œä¿¡æ¯å¡«å†™è¡¨å•é¡µé¢-->
 <html>
-<head><title>ÓÃ»§×¢²á</title></head>
+<head><title>ç”¨æˆ·æ³¨å†Œ</title>
+	<style type="text/css">
+		fieldset{width:520px margin: 0 auto;}
+		legend{font-weight:bold; font-size:14px;}
+		.label{float:left;width:70px;margin-left:10px;}
+		.left{margin-left:80px;}
+		.input{width:150px;}
+		span{color:#666666;}
+	</style>
+	<script language=JavaScript>
+		function InputCheck(RegForm){
+			if($RegForm.username.value==""){
+			
+			}
+		}
+	</script>
+</head>
 <body>
-	<label>ÓÃ»§Ãû</label>
-	<label>ÃÜÂë</label>
-	<label>ÖØ¸´ÃÜÂë </label>
-	<label>µç×ÓÓÊÏä</label>
+	<fieldset>
+	<legend>ç”¨æˆ·æ³¨å†Œ</legend>
+	<form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
+	<p>
+	<label class="label">ç”¨æˆ·å</label>
+	<input id="username" name="username" type="text"/>
+	<span>(å¿…å¡«ï¼Œ3-15å­—ç¬¦é•¿åº¦ï¼Œæ”¯æŒæ±‰å­—ã€å­—æ¯ã€æ•°å­—åŠ)</span>
+	</p>
+	<p>
+	<label class="label">å¯†ç </label>
+	<input id="password" name="password" type="password" class="input"/>
+	<span>(å¿…å¡«ï¼Œä¸å¾—å°‘äº6ä½)</span>
+	</p>
+	<p>
+	<label class="label">é‡å¤å¯†ç  </label>
+	<input id="repass" name="repass" type="password" class="input"/>
+	</p>
+	<p>
+	<label class="label">ç”µå­é‚®ç®±</label>
+	<input id="email" name="email" type="text" class="input"/>
+	</p>
+	<p>
+	<input type="submit" name="submit" value="æäº¤æ³¨å†Œ" class="left"/>
+	</p>
 	
+	</form>
+	</fieldset>
 </body>
 </html>
